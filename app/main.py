@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from router import transformers
+from .router import transformers
 
 
 app = FastAPI()
