@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from .router import transformers
 
 
-app = FastAPI()
+app = FastAPI(openapi_prefix='/prod')
 app.include_router(transformers.router)
 
 
