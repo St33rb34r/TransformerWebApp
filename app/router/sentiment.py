@@ -24,7 +24,7 @@ def get_info():
             'version': '-'}
 
 
-@router.post(route + "/parse_sentence")
+@router.post(route + "/get_sentiment")
 def sentiment(message: Message):
     classifier = SentimentModel()
     response = classifier(message.message)[0]
@@ -32,7 +32,7 @@ def sentiment(message: Message):
 
 
 @router.put(route + "/load_model")
-def load_translation_model(model_checkpoint: str):
+def load_sentiment_model(model_checkpoint: str):
     model = SentimentModel()
     model.reload_model(model_checkpoint)
     return {"response": "success"}, 200

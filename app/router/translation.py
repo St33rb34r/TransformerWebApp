@@ -12,7 +12,7 @@ class Message(BaseModel):
 
 
 router = APIRouter()
-route = "/transformers"
+route = "/translation"
 
 
 @router.get(route + "/info")
