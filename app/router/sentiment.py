@@ -1,10 +1,7 @@
-from transformers import pipeline
-
 from fastapi import APIRouter
 
 from pydantic import BaseModel
 
-from app.config import settings
 from app.ml_model import SentimentModel
 
 

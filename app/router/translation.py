@@ -1,9 +1,7 @@
 from fastapi import APIRouter
 
 from pydantic import BaseModel
-from transformers import pipeline
 
-from app.config import settings
 from app.ml_model import TranslationModel
 
 
