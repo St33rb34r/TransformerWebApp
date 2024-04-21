@@ -34,6 +34,6 @@ def translate(message: Message):
 def load_translation_model(model_checkpoint: str):
     model = TranslationModel()
     model.reload_model(model_checkpoint)
-    return {"response": "success"}, 200
+    return {"response": "success"}
 
 

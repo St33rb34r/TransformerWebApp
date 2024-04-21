@@ -1,5 +1,3 @@
-import os
-
 from transformers import pipeline
 
 from app.config import settings

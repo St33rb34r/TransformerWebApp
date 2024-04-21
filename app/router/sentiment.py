@@ -32,4 +32,4 @@ def sentiment(message: Message):
 def load_sentiment_model(model_checkpoint: str):
     model = SentimentModel()
     model.reload_model(model_checkpoint)
-    return {"response": "success"}, 200
+    return {"response": "success"}
